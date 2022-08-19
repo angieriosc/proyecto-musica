@@ -8,15 +8,15 @@ Creo que es un proyecto interesante ya que desde hace mucho tiempo la humanidad 
 
 ## Pseudocódigo
 
-Establecer funciones para abrir y cerrar ventanas 
+	Establecer funciones para abrir y cerrar ventanas 
 
-Crear una pagina principal en la que muestre los diferentes géneros de música para que el usuario elija 
+	Crear una pagina principal en la que muestre los diferentes géneros de música para que el usuario elija 
 
 
-Sub página Pop en la que muestre botón de Pop Latino y botón de Ingles 
-	Pagina de pop latino
+	Sub página Pop en la que muestre botón de Pop Latino y botón de Ingles 
+	 Pagina de pop latino
 	  Botón menu 
-	 Crear variable de puntaje - Puntaje_pe = 0
+	  Crear variable de puntaje - Puntaje_pe = 0
               
 		Pregunta 1 : ¿Qué banda canta la canción “Alejate de Mi”? A- Mana  B-El Tri C-Camila D- Moderato
 		respuesta1_pe= lo que ingrese el usuario 

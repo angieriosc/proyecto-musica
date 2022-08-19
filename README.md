@@ -125,9 +125,9 @@ Sub página Pop en la que muestre botón de Pop Latino y botón de Ingles
 		
 						
 
-Sub página Musicales
+	Sub página Musicales
 
-Crear variable de puntaje - Puntaje_m = 0
+	Crear variable de puntaje - Puntaje_m = 0
               
 		Pregunta 1 : ¿De qué musical es la canción “For Forever”? A- Beetlejuice  B- Rent C - Dear Evan Hansen D- Mean Girls
 		respuesta_1m= lo que ingrese el usuario 
@@ -178,7 +178,7 @@ Crear variable de puntaje - Puntaje_m = 0
 			si calificacion = 100 mostrar 5 estrellas
 	
 
-Sub página Rock
+	Sub página Rock
 	
 		
 

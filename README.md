@@ -8,9 +8,14 @@ Este programa es un juego en el que el usuario podrá probar sus conocimientos d
 
 Decidi crear este programa ya que creo que la música es algo que todos o una gran mayoría de personas difruta escuchar. Es un proyecto interesante ya que permite aprender de una manera divertida y al hacerlo en un formato de juego hace que el usuario disfrute más contestar las preguntas a que si fuera un simple test.
 
+
 Referencias: 
+
+
 Pérez, J & Gardey, A (2021) Definición de Música Recuperado de: https://definicion.de/musica/ 
+
 Galindo, M (s/f) El origen de la música. Recuperado de: https://www.musicaeduca.es/revista/colaboradores/4012-el-origen-de-la-musica
+
 López, A (s/f) La música como lenguaje. Recuperado de: http://www.filomusica.com/filo82/lenguaje.html
 
 ## Pseudocódigo

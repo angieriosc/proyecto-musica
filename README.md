@@ -6,7 +6,7 @@ La música, considerada por muchos  “el arte que consiste en dotar a los sonid
 
 Este programa es un juego en el que el usuario podrá probar sus conocimientos de musica, dentro del juego habrán diferentes tipos de test para 3 géneros de música; pop (latino e ingles), musicales de Broadway y Rock. Cada uno contará con diferentes tipos de preguntas como adivina el artista, adivina la canción y completa la letra. 
 
-Decidi crear este programa ya que creo que la música es algo que todos o una gran mayoría de personas difruta escuchar. Es un proyecto interesante ya que permite aprender de una manera divertida y al hacerlo en un formato de juego hace que el usuario disfrute más contestar las preguntas a que si fuera un simple test.
+Decidi crear este programa ya que creo que la música es algo que todos o una gran parte de la humannidad difruta escuchar. Es un proyecto interesante ya que permite aprender de una manera divertida y al hacerlo en un formato de juego hace que el usuario disfrute más contestar las preguntas a que si fuera un simple test.
 
 
 Referencias: 

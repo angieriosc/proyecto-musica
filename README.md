@@ -1,14 +1,21 @@
 # Proyecto-TC1028
 
-##  Music
+##  Music pop quiz 
+
+La música, considerada por muchos  “el arte que consiste en dotar a los sonidos y los silencios de una cierta organización” (Pérez, 2021), es algo que forma parte de la vida diaria de muchas personas . Muchos escuchamos música mientras manejamos, cocinamos, trabajamos o simplemente para relajarse después de un día pesado. Es bien cierto que el origen de la música es un misterio para la humanidad, sin embargo sabemos que ha existido por mucho tiempo. La música nos puede transmitir cosas que son dificiles de explicar por eso muchas personas consideran que la música "es un lenguaje hecho arte, más expresivo si cabe que la propia lengua" (López, A).
 
 Este programa es un juego en el que el usuario podrá probar sus conocimientos de musica, dentro del juego habrán diferentes tipos de test para 3 géneros de música; pop (latino e ingles), musicales de Broadway y Rock. Cada uno contará con diferentes tipos de preguntas como adivina el artista, adivina la canción y completa la letra. 
 
-Creo que es un proyecto interesante ya que desde hace mucho tiempo la humanidad a mostrado mucho interés por la música, y la música es algo que la mayoría de las personas habrá que le guste más un genero que otro pero sigue siendo música.
+Decidi crear este programa ya que creo que la música es algo que todos o una gran mayoría de personas difruta escuchar. Es un proyecto interesante ya que permite aprender de una manera divertida y al hacerlo en un formato de juego hace que el usuario disfrute más contestar las preguntas a que si fuera un simple test.
+
+Referencias: 
+Pérez, J & Gardey, A (2021) Definición de Música Recuperado de: https://definicion.de/musica/ 
+Galindo, M (s/f) El origen de la música. Recuperado de: https://www.musicaeduca.es/revista/colaboradores/4012-el-origen-de-la-musica
+López, A (s/f) La música como lenguaje. Recuperado de: http://www.filomusica.com/filo82/lenguaje.html
 
 ## Pseudocódigo
 
-	Establecer funciones para abrir y cerrar ventanas 
+	Establecer funciones para abrir y cerrar ventanas (Abra multiples ventanas dentro del programa)
 
 	Crear una pagina principal en la que muestre los diferentes géneros de música para que el usuario elija 
 
@@ -58,13 +65,13 @@ Creo que es un proyecto interesante ya que desde hace mucho tiempo la humanidad 
 			puntaje_pe = puntaje_pe  + 1
 		si no puntaje _pe = puntaje_pe 
 
-	       calificacion = puntaje_pe /5 * 100
-		Mostrar calificacion
-			si calificacion = 20 mostrar 1 estrella
-			si calificacion = 40 mostrar 2 estrellas
-			si calificacion = 60 mostrar 3 estrellas
-			si calificacion = 80 mostrar 4 estrellas
-			si calificacion = 100 mostrar 5 estrellas
+	       calificacion_pe = puntaje_pe /5 * 100
+		Mostrar calificacion_pe
+			si calificacion_pe = 20 mostrar 1 estrella
+			si calificacion_pe = 40 mostrar 2 estrellas
+			si calificacion_pe = 60 mostrar 3 estrellas
+			si calificacion_pe = 80 mostrar 4 estrellas
+			si calificacion_pe = 100 mostrar 5 estrellas
 		
 		
 		
@@ -114,13 +121,13 @@ Creo que es un proyecto interesante ya que desde hace mucho tiempo la humanidad 
 		si no puntaje_pi = puntaje_pi
 
 
-	       calificación = puntaje_pi/5 * 100
-		Mostrar calificacion
-			si calificacion = 20 mostrar 1 estrella
-			si calificacion = 40 mostrar 2 estrellas
-			si calificacion = 60 mostrar 3 estrellas
-			si calificacion = 80 mostrar 4 estrellas
-			si calificacion = 100 mostrar 5 estrellas
+	       calificación_pi = puntaje_pi/5 * 100
+		Mostrar calificacion_pi
+			si calificacion_pi = 20 mostrar 1 estrella
+			si calificacion_pi = 40 mostrar 2 estrellas
+			si calificacion_pi = 60 mostrar 3 estrellas
+			si calificacion_pi = 80 mostrar 4 estrellas
+			si calificacion_pi = 100 mostrar 5 estrellas
 	
 		
 						
@@ -169,16 +176,66 @@ Creo que es un proyecto interesante ya que desde hace mucho tiempo la humanidad 
 			puntaje_m = puntaje_m + 1
 		si no puntaje_m = puntaje_m 
 
-	       calificacion = puntaje_m/5 * 100
-		Mostrar calificacion
-			si calificacion = 20 mostrar 1 estrella
-			si calificacion = 40 mostrar 2 estrellas
-			si calificacion = 60 mostrar 3 estrellas
-			si calificacion = 80 mostrar 4 estrellas
-			si calificacion = 100 mostrar 5 estrellas
+	       calificacio_mn = puntaje_m/5 * 100
+		Mostrar calificacion_m
+			si calificacion_m = 20 mostrar 1 estrella
+			si calificacion_m = 40 mostrar 2 estrellas
+			si calificacion_m = 60 mostrar 3 estrellas
+			si calificacion_m = 80 mostrar 4 estrellas
+			si calificacion_m = 100 mostrar 5 estrellas
 	
 
 	Sub página Rock
 	
-		
+	Crear variable de puntaje - Puntaje_m = 0
+          
+		Pregunta 1 : ¿De qué banda es la canción “Under Pressure”? A- Queen  B- Kiss - Rolling Stones D- Beatles
+		respuesta_1r= lo que ingrese el usuario 
+		 Mientras la respuesta no sea A o B o C o D (Validador de respuestas)
+			Por favor contestar con A,B,C y D solamente	
+		si la respuesta_1r = A
+			puntaje_r= puntaje_r + 1
+		si no puntaje_r = puntaje_r
+
+		Pregunta 2 : ¿Qué canción pertenece a la banda “Aerosmith”? A- All in black  B- Satisfaction C- Dream On  D- Let it be 
+		respuesta_2r= lo que ingrese el usuario 
+		 Mientras la respuesta no sea A o B o C o D (Validador de respuestas)
+			Por favor contestar con A,B,C y D solamente	
+		si la respuesta_2r = B
+			puntaje_r= puntaje_r + 1
+		si no puntaje_r = puntaje_r
+
+		Pregunta 3 : Completa la letra Is this the real life? Is this just ______ ?  A- a dream  B- my imagination C- me  D- fantasy
+		respuesta_3r = lo que ingrese el usuario 
+		 Mientras la respuesta no sea A o B o C o D (Validador de respuestas)
+			Por favor contestar con A,B,C y D solamente	
+		si la respuesta_3r = D
+			puntaje_r= puntaje_ + 1
+		si no puntaje_r = puntaje_r
+
+		Pregunta 4 : ¿Cuál banda canta “Creep” ? A- Radiohead  B- AC/DC C- The White Stripes  D- Nirvana
+		respuesta_4r= lo que ingrese el usuario 
+		 Mientras la respuesta no sea A o B o C o D (Validador de respuestas)
+			Por favor contestar con A,B,C y D solamente	
+		si la respuesta_4r = A
+			puntaje_r = puntaje_r + 1
+		si no puntaje_r = puntaje_r
+
+		Pregunta 5 : ¿Quién ganó el premio Grammy al mejor album de rock en 2013? A- Foo fighters B- U2 C- Led Zeppelin D- Green Day
+		respuesta_5r= lo que ingrese el usuario 
+		 Mientras la respuesta no sea A o B o C o D (Validador de respuestas)
+			Por favor contestar con A,B,C y D solamente	
+		si la respuesta_5r = D
+			puntaje_r = puntaje_r + 1
+		si no puntaje_r = puntaje_r
+
+	       calificacion_r = puntaje_r/5 * 100
+		Mostrar calificacion
+			si calificacion_r = 20 mostrar 1 estrella 
+			si calificacion_r = 40 mostrar 2 estrellas
+			si calificacion_r = 60 mostrar 3 estrellas
+			si calificacion_r = 80 mostrar 4 estrellas
+			si calificacion_r = 100 mostrar 5 estrellas
+	
+	Todas las estrellas que se muestren serán imagenes
 

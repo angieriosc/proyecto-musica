@@ -62,11 +62,11 @@ López, A (s/f) La música como lenguaje. Recuperado de: http://www.filomusica.c
 			puntaje_pe = puntaje_pe  + 1
 		si no puntaje_pe  = puntaje_pe 
 
-		Pregunta 5 : ¿Qué artista canta la canción “Happier than ever”? A-  Demi Lovato B- Selena Gomez C- Katy Perry D-Billie Eilish
+		Pregunta 5 : ¿Qué artista canta la canción “Por ti”? A- Yuridia B- Rio roma C- Belanova D-Timbiriche
 		respuesta= lo que ingrese el usuario 
 		 Mientras la respuesta no sea A o B o C o D (Validador de respuestas)
                 	Por favor contestar con A,B,C y D solamente	
-		si la respuesta = D
+		si la respuesta = C
 			puntaje_pe = puntaje_pe  + 1
 		si no puntaje _pe = puntaje_pe 
 

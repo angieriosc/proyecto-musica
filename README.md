@@ -1,96 +1,106 @@
 # Proyecto-TC1028
 
-##  Music pop quiz 
+## Convert
 
-La música, considerada por muchos  “el arte que consiste en dotar a los sonidos y los silencios de una cierta organización” (Pérez, 2021), es algo que forma parte de la vida diaria de muchas personas . Muchos escuchamos música mientras manejamos, cocinamos, trabajamos o simplemente para relajarse después de un día pesado. Es bien cierto que el origen de la música es un misterio para la humanidad, sin embargo sabemos que ha existido por mucho tiempo. La música nos puede transmitir cosas que son dificiles de explicar por eso muchas personas consideran que la música "es un lenguaje hecho arte, más expresivo si cabe que la propia lengua" (López, A).
+Una unidad de medida es un valor designado que se "usa para medir la magnitud física de un objeto, sustancia o fenómeno" (Unidades de medida, 2019). Las unidades de medida tienen una gran importancia en nuestra vida ya que  permiten calcular cosas como la longitud, la masa, la capacidad, la superficie, el volumen, la temperatura, ó el tiempo. La temperatura es una medida relativa, las escalas que se basan en puntos de referencia deben ser usadas para medir la temperatura con precisión. Elegí las 3 unidades de temperatura más conocidas ya que las escalas de temperatura "nos permiten medir la energia del calor de una manera ligeramente diferente"(Martha, 2003). 
 
-Este programa es un juego en el que el usuario podrá probar sus conocimientos de musica, dentro del juego habrán diferentes tipos de test para 3 géneros de música; pop (latino e ingles), musicales de Broadway y Rock. Cada uno contará con diferentes tipos de preguntas como adivina el artista, adivina la canción y completa la letra. 
+Este programa es un convertidor de unidades en el que el usuario podrá saber la conversión de diferentes medidas de temperatura en Kelcin, Celsius, Fahrenheit y la longitud del sistema internacional de medidas y el sistema ingles. Esto facilitara los procesos al usuario de manera rápida y eficaz.
 
-Decidi crear este programa ya que creo que la música es algo que todos o una gran parte de la humannidad difruta escuchar. Es un proyecto interesante ya que permite aprender de una manera divertida y al hacerlo en un formato de juego hace que el usuario disfrute más contestar las preguntas a que si fuera un simple test.
-
+Decidi crear este programa ya que creo que las unidades de medida forman parte de nuestra vida, y existen ocasiones en las que no estamos familiarizados con el sistema de unidades inglés. Por lo qué, un convertidor de unidades sería una herramienta muy útil. 
 
 Referencias: 
 
-
-Pérez, J & Gardey, A (2021) Definición de Música Recuperado de: https://definicion.de/musica/ 
-
-Galindo, M (s/f) El origen de la música. Recuperado de: https://www.musicaeduca.es/revista/colaboradores/4012-el-origen-de-la-musica
-
-López, A (s/f) La música como lenguaje. Recuperado de: http://www.filomusica.com/filo82/lenguaje.html
+Unidades de medida. (2019, 8 agosto). Significados. Recuperado 22 de septiembre de 2022, de https://www.significados.com/unidades-de-medida/
+Day,M & Carphi,A (2003)	Temperatura. Recuperado 22 de septiembre de 2022, de https://www.visionlearning.com/es/library/Ciencias-Generales/3/Temperatura/48
 
 ## Pseudocódigo
-Pseudocódigo_Convertidor unidades de medida 
+#Funciones temperatura
+  ce_a_ke(c):
 
-Funciones temperatura
-ce_a_ke(c)
 	k=c+273.15
 	return k
+	
+ke_a_ce(k):
 
-ke_a_ce(k)
 	c=k-273.15
 	return c
+	
+fa_a_ce():
 
-fa_a_ce()
 	c=(5*(f-32))/9
 	return c
+	
+ce_a fa():
 
-ce_a fa()
 	f=((9*c)/5)+32
 	return f
+	
+ke_a_fa():
 
-ke_a_fa()
 	f=(((9*(k-273.15))/9)+32
 	return f
+	
+fa_a_ke():
 
-fa_a_ke()
 	k=(((5*(f-32))/9)+273.15
 	return k
 
-Funciones medidas
-cm_a_in(cm)
+#Funciones medidas
+
+cm_a_in(cm):
+
 	in=cm/2.54
 	return in
+	
+in_a_cm(in):
 
-in_a_cm(in)
 	cm=in*2.54
 	return cm
+	
+ft_a_m(ft):
 
-ft_a_m(ft)
 	m=ft*0.3048
 	return m
+	
+m_a_ft(m):
 
-m_a_ft(m)
 	ft=m/0.3048
 	return ft
+	
+yd_a_m(yd):
 
-yd_a_m(yd)
 	m=yd*0.914
 	return m
+	
+m_a_yd(m):
 
-m_a_yd(m)
 	yd=m/0.914
-	return m	
+	return m
+	
+mi_km(mi):
 
-mi_km(mi)
 	km=mi*1.609
 	return km
+	
+km_a_mi():
 
-km_a_mi()
 	mi=km/1.609
 	return mi
 
+print-("Hola bienvenido a este programa. Aquí podrás convertir tus unidades de una manera fácil y rápida.")
+Para continuar ingresa tu nombre completo;
+Nombre=input()
 
-Hola bienvenido a este programa. Aquí podrás convertir tus unidades de una manera fácil y rápida.
-Para continuar ingresa tu nombre completo
-Nombre=input 
 Mientras que la respuesta no sea mayor a 2 caracteres:
+
 	Dato invalido 
 	Para continuar ingresa tu nombre completo
 	Nombre=input 
 
-Ingresa tu edad:
-edad=input 
+edad=input("Ingresa tu edad:")
+
 Mientras que la respuesta no sea menor a 113 ni mayor que 0: 
+
 	Dato invalido 
 	Ingresa tu edad:
 	edad=input 
@@ -107,7 +117,7 @@ Mientras que la respuesta no sea A o B:
 	B- Medidas de longitud 
 	respuesta_1=input
 
-Si la respuesta es A:
+Si la respuesta es igual a "a":
 	Elige que deseas convertir 
 	1- centímetros a pulgadas
 	2- pulgadas a centímetros 
@@ -117,6 +127,7 @@ Si la respuesta es A:
 	6- metros a yardas
 	7- millas a kilometros
 	8- kilómetros a millas 
+	
 	Mientras que la respuesta no sea menor o igual a 8 ni mayor que 0 
 		Respuesta invalida, favor de contestar con 1,2,3,4,5,6,7 ó 8.
 		Elige que deseas convertir: 
@@ -169,9 +180,8 @@ Si la respuesta es A:
 		función km_a_mi (km)
 		la respuesta es: 
 
+Si la respuesta es igual "b":
 
-
-Si la respuesta es B:
 	Elige que deseas convertir 
 	1- Celcius a Kelvin
 	2- Kelvin a Celcius
@@ -179,6 +189,7 @@ Si la respuesta es B:
 	4- Celsius a Fahrenheit
 	5- Kelvin a Fahrenheit
 	6- Fahrenheit a Celsius
+	
 	Mientras que la respuesta no sea menor o igual a 6 ni mayor que 0 
 		Respuesta invalida, favor de contestar con 1,2,3,4,5, ó 6
 		Elige que deseas convertir: 

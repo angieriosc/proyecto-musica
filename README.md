@@ -19,228 +19,207 @@ Galindo, M (s/f) El origen de la música. Recuperado de: https://www.musicaeduca
 López, A (s/f) La música como lenguaje. Recuperado de: http://www.filomusica.com/filo82/lenguaje.html
 
 ## Pseudocódigo
+Pseudocódigo_Convertidor unidades de medida 
 
-	Establecer funciones para abrir y cerrar ventanas (Abra multiples ventanas dentro del programa)
+Funciones temperatura
+ce_a_ke(c)
+	k=c+273.15
+	return k
 
-	Crear una pagina principal en la que muestre los diferentes géneros de música para que el usuario elija 
+ke_a_ce(k)
+	c=k-273.15
+	return c
+
+fa_a_ce()
+	c=(5*(f-32))/9
+	return c
+
+ce_a fa()
+	f=((9*c)/5)+32
+	return f
+
+ke_a_fa()
+	f=(((9*(k-273.15))/9)+32
+	return f
+
+fa_a_ke()
+	k=(((5*(f-32))/9)+273.15
+	return k
+
+Funciones medidas
+cm_a_in(cm)
+	in=cm/2.54
+	return in
+
+in_a_cm(in)
+	cm=in*2.54
+	return cm
+
+ft_a_m(ft)
+	m=ft*0.3048
+	return m
+
+m_a_ft(m)
+	ft=m/0.3048
+	return ft
+
+yd_a_m(yd)
+	m=yd*0.914
+	return m
+
+m_a_yd(m)
+	yd=m/0.914
+	return m	
+
+mi_km(mi)
+	km=mi*1.609
+	return km
+
+km_a_mi()
+	mi=km/1.609
+	return mi
 
 
-	Sub página Pop en la que muestre botón de Pop Latino y botón de Ingles 
-	 Pagina de pop latino
-	  Botón menu 
-	  Crear variable de puntaje - Puntaje_pe = 0
-              
-		Pregunta 1 : ¿Qué banda canta la canción “Alejate de Mi”? A- Mana  B-El Tri C-Camila D- Moderato
-		respuesta1_pe= lo que ingrese el usuario 
-		 Mientras la respuesta no sea A o B o C o D (Validador de respuestas)
-                	Por favor contestar con A,B,C y D solamente	
-		si la respuesta1_pe = C
-			puntaje_pe = puntaje_pe  + 1
-		si no puntaje_pe  = puntaje_pe 
+Hola bienvenido a este programa. Aquí podrás convertir tus unidades de una manera fácil y rápida.
+Para continuar ingresa tu nombre completo
+Nombre=input 
+Mientras que la respuesta no sea mayor a 2 caracteres:
+	Dato invalido 
+	Para continuar ingresa tu nombre completo
+	Nombre=input 
 
-		Pregunta 2 : ¿Qué canción pertenece a Ha-ash”? A- Ex de verdad  B- Tu de que vas C- Perdón D- Espacio Sideral
-		respuesta2_pe= lo que ingrese el usuario 
-		 Mientras la respuesta no sea A o B o C o D (Validador de respuestas)
-                	Por favor contestar con A,B,C y D solamente	
-		si la respuesta2_pe = A
-			puntaje_pe = puntaje_pe  + 1
-		si no puntaje_pe  = puntaje_pe 
+Ingresa tu edad:
+edad=input 
+Mientras que la respuesta no sea menor a 113 ni mayor que 0: 
+	Dato invalido 
+	Ingresa tu edad:
+	edad=input 
 
-		Pregunta 3 : Completa la letra Si tu te vas y yo me voy _____ “    “A-  que  vamos  a hacer  B-  es el fin C- a mi casa D- con quién se queda el perro
-		respuesta3_pe= lo que ingrese el usuario 
-		 Mientras la respuesta no sea A o B o C o D (Validador de respuestas)
-                	Por favor contestar con A,B,C y D solamente	
-		si la respuesta3_pe = D
-			puntaje_pe = puntaje_pe  + 1
-		si no puntaje_pe  = puntaje_pe 
+Elige una opción para continuar (contestar solo con letras)
+¿Qué quieres convertir?
+A-Temperatura
+B- Medidas de longitud 
+respuesta_1=input
+Mientras que la respuesta no sea A o B:
+	Respuesta invalida 
+	¿Qué quieres convertir?
+	A-Temperatura
+	B- Medidas de longitud 
+	respuesta_1=input
 
-		Pregunta 4 : ¿Quién ganó el premio Grammy al mejor álbum de pop latino en 2017 ? A- Luis Miguel B- Shakira C- Bad Bunny D- Jessey Joy 
-		respuesta4_pe= lo que ingrese el usuario 
-		 Mientras la respuesta no sea A o B o C o D (Validador de respuestas)
-                	Por favor contestar con A,B,C y D solamente	
-		si la respuesta_pe = A
-			puntaje_pe = puntaje_pe  + 1
-		si no puntaje_pe  = puntaje_pe 
+Si la respuesta es A:
+	Elige que deseas convertir 
+	1- centímetros a pulgadas
+	2- pulgadas a centímetros 
+	3- pies a metros 
+	4- metros a pies
+	5- yardas a metros
+	6- metros a yardas
+	7- millas a kilometros
+	8- kilómetros a millas 
+	Mientras que la respuesta no sea menor o igual a 8 ni mayor que 0 
+		Respuesta invalida, favor de contestar con 1,2,3,4,5,6,7 ó 8.
+		Elige que deseas convertir: 
+		1- centímetros a pulgadas
+		2- pulgadas a centímetros 
+		3- pies a metros 
+		4- metros a pies
+		5- yardas a metros
+		6- metros a yardas
+		7- millas a kilómetros
+		8- kilómetros a millas 
 
-		Pregunta 5 : ¿Qué artista canta la canción “Por ti”? A- Yuridia B- Rio roma C- Belanova D-Timbiriche
-		respuesta= lo que ingrese el usuario 
-		 Mientras la respuesta no sea A o B o C o D (Validador de respuestas)
-                	Por favor contestar con A,B,C y D solamente	
-		si la respuesta = C
-			puntaje_pe = puntaje_pe  + 1
-		si no puntaje _pe = puntaje_pe 
-
-	       calificacion_pe = puntaje_pe /5 * 100
-		Mostrar calificacion_pe
-			si calificacion_pe = 20 mostrar 1 estrella
-			si calificacion_pe = 40 mostrar 2 estrellas
-			si calificacion_pe = 60 mostrar 3 estrellas
-			si calificacion_pe = 80 mostrar 4 estrellas
-			si calificacion_pe = 100 mostrar 5 estrellas
+	Si la respuesta es 1:
+		Ingresa los centímetros=input
+		función cm_a_in (cm)
+		la respuesta es: 
 		
-		
-		
-		
-				
-	Pagina de pop ingles 
-		Crear variable de puntaje - Puntaje_pi = 0
-              
-		Pregunta 1 : ¿Qué banda canta la canción “The Scientist”? A- The Beatles  B-Coldplay C-Queen D- Imagine Dragons
-		respuesta1_pi = lo que ingrese el usuario 
-		 Mientras la respuesta no sea A o B o C o D (Validador de respuestas)
-                	Por favor contestar con A,B,C y D solamente	
-		si la respuesta1_pi = B
-			puntaje_pi= puntaje_pi + 1
-		si no puntaje_pi = puntaje_pi
+	Si la respuesta es 2:
+		Ingresa las pulgadas=input
+		función in_a_cm (in)
+		la respuesta es: 
 
-		Pregunta 2 : ¿Qué canción pertenece a Shawn Mendes”? A- Rolling in the deep  B- Stay C- Mercy D- Golden
-		respuesta2_pi= lo que ingrese el usuario 
-		 Mientras la respuesta no sea A o B o C o D (Validador de respuestas)
-                	Por favor contestar con A,B,C y D solamente	
-		si la respuesta2_pi = C
-			puntaje_pi= puntaje_pi + 1
-		si no puntaje_pi = puntaje_pi
+	Si la respuesta es 3:
+		Ingresa los pies=input
+		función ft_a_m (ft)
+		la respuesta es: 
 
-		Pregunta 3 : Completa la letra Go home, get ahead light speed internet I don’t want to talk about “  “ A- the past  B- last summer C- 				      that D- the way that it was 
-		respuesta3_pi= lo que ingrese el usuario 
-		 Mientras la respuesta no sea A o B o C o D (Validador de respuestas)
-                	Por favor contestar con A,B,C y D solamente	
-		si la respuesta3_pi = D
-			puntaje_pi= puntaje_pi + 1
-		si no puntaje_pi = puntaje_pi
+	Si la respuesta es 4:
+		Ingresa los metros=input
+		función m_a_ft (m)
+		la respuesta es: 
 
-		Pregunta 4 : ¿Quién ganó el premio Grammy al mejor álbum de pop vocal en 2022 ? A- Olivia Rodrigo B- Dua Lipa C- Doja Cat D-Billie Eilish
-		respuesta4_pi= lo que ingrese el usuario 
-		 Mientras la respuesta no sea A o B o C o D (Validador de respuestas)
-                	Por favor contestar con A,B,C y D solamente	
-		si la respuesta4_pi = A
-			puntaje_pi = puntaje_pi + 1
-		si no puntaje_pi = puntaje_pi
+	Si la respuesta es 5:
+		Ingresa las yardas=input
+		función yd_a_m (yd)
+	        la respuesta es: 
 
-		Pregunta 5 : ¿Qué artista canta la canción “Happier than ever”? A-  Demi Lovato B- Selena Gomez C- Katy Perry D-Billie Eilish
-		respuesta5_pi= lo que ingrese el usuario 
-		 Mientras la respuesta no sea A o B o C o D (Validador de respuestas)
-                	Por favor contestar con A,B,C y D solamente	
-		si la respuesta5_pi = D
-			puntaje_pi = puntaje_pi + 1
-		si no puntaje_pi = puntaje_pi
+	Si la respuesta es 6:
+		Ingresa los metros=input
+		función m_a_yd (m)
+		la respuesta es: 
+
+	Si la respuesta es 7:
+		Ingresa los millas=input
+		función mi_a_km (mi)
+		la respuesta es: 
+
+	Si la respuesta es 8:
+		Ingresa los km=input
+		función km_a_mi (km)
+		la respuesta es: 
 
 
-	       calificación_pi = puntaje_pi/5 * 100
-		Mostrar calificacion_pi
-			si calificacion_pi = 20 mostrar 1 estrella
-			si calificacion_pi = 40 mostrar 2 estrellas
-			si calificacion_pi = 60 mostrar 3 estrellas
-			si calificacion_pi = 80 mostrar 4 estrellas
-			si calificacion_pi = 100 mostrar 5 estrellas
-	
-		
-						
 
-	Sub página Musicales
+Si la respuesta es B:
+	Elige que deseas convertir 
+	1- Celcius a Kelvin
+	2- Kelvin a Celcius
+	3- Fahrenheit a Celsius
+	4- Celsius a Fahrenheit
+	5- Kelvin a Fahrenheit
+	6- Fahrenheit a Celsius
+	Mientras que la respuesta no sea menor o igual a 6 ni mayor que 0 
+		Respuesta invalida, favor de contestar con 1,2,3,4,5, ó 6
+		Elige que deseas convertir: 
+		1- Celcius a Kelvin
+		2- Kelvin a Celcius
+		3- Fahrenheit a Celsius
+		4- Celsius a Fahrenheit
+		5- Kelvin a Fahrenheit
+		6- Fahrenheit a Celsius
 
-	Crear variable de puntaje - Puntaje_m = 0
-              
-		Pregunta 1 : ¿De qué musical es la canción “For Forever”? A- Beetlejuice  B- Rent C - Dear Evan Hansen D- Mean Girls
-		respuesta_1m= lo que ingrese el usuario 
-		 Mientras la respuesta no sea A o B o C o D (Validador de respuestas)
-                	Por favor contestar con A,B,C y D solamente	
-		si la respuesta_1m = C
-			puntaje_m= puntaje_m + 1
-		si no puntaje_m = puntaje_m
+	Si la respuesta es 1:
+		Ingresa los grados celsius=input
+		función ce_a_ke (celsius)
+		la respuesta es: 
 
-		Pregunta 2 : ¿Qué canción pertenece al musical “Be more chill”? A- Michael in the bathroom  B- Burn C- Meant to be yours  D- Dead mom
-		respuesta_2m= lo que ingrese el usuario 
-		 Mientras la respuesta no sea A o B o C o D (Validador de respuestas)
-                	Por favor contestar con A,B,C y D solamente	
-		si la respuesta_2m = A
-			puntaje_m= puntaje_m + 1
-		si no puntaje_m = puntaje_m
+	Si la respuesta es 2:
+		Ingresa los grados kelvin=input
+		función ke_a_ce (kelvin)
+		la respuesta es: 
 
-		Pregunta 3 : Completa la letra Honey what you’re waiting for? Shut up ______  A- now  past  B-  Veronica  C- please  D- Heather
-		respuesta_3m = lo que ingrese el usuario 
-		 Mientras la respuesta no sea A o B o C o D (Validador de respuestas)
-                	Por favor contestar con A,B,C y D solamente	
-		si la respuesta_3m = D
-			puntaje_m= puntaje_m + 1
-		si no puntaje_m = puntaje_m
+	Si la respuesta es 3:
+		Ingresa los grados fahrenheit=input
+		función fa_a_ce (fahrenheit)
+		la respuesta es: 
 
-		Pregunta 4 : ¿Cuál personaje canta “One Last time” en Hamilton? A- Eliza  B- George Washington C- Alexander Hamilton  D- Aaron Burr
-		respuesta_4m= lo que ingrese el usuario 
-		 Mientras la respuesta no sea A o B o C o D (Validador de respuestas)
-                	Por favor contestar con A,B,C y D solamente	
-		si la respuesta_4m = B
-			puntaje_m = puntaje_m + 1
-		si no puntaje_m = puntaje_m
+	Si la respuesta es 4:
+		Ingresa los grados celsius=input
+		función ce_a_ke (celsius)
+		la respuesta es: 
 
-		Pregunta 5 : ¿Quién ganó el premio Tony al mejor musical en 2008? A-  Wicked B- Crybaby C- Matilda D-In the Heights
-		respuesta_5m= lo que ingrese el usuario 
-		 Mientras la respuesta no sea A o B o C o D (Validador de respuestas)
-                	Por favor contestar con A,B,C y D solamente	
-		si la respuesta_5m = D
-			puntaje_m = puntaje_m + 1
-		si no puntaje_m = puntaje_m 
+	Si la respuesta es 5:
+		Ingresa los grados kelvin=input
+		función ke_a_fa (kelvin)
+		la respuesta es: 
 
-	       calificacio_mn = puntaje_m/5 * 100
-		Mostrar calificacion_m
-			si calificacion_m = 20 mostrar 1 estrella
-			si calificacion_m = 40 mostrar 2 estrellas
-			si calificacion_m = 60 mostrar 3 estrellas
-			si calificacion_m = 80 mostrar 4 estrellas
-			si calificacion_m = 100 mostrar 5 estrellas
-	
+	Si la respuesta es 6:
+		Ingresa los grados fahrenheit=input
+		función fa_a_ke (fahrenheit)
+		la respuesta es: 
 
-	Sub página Rock
-	
-	Crear variable de puntaje - Puntaje_m = 0
-          
-		Pregunta 1 : ¿De qué banda es la canción “Under Pressure”? A- Queen  B- Kiss - Rolling Stones D- Beatles
-		respuesta_1r= lo que ingrese el usuario 
-		 Mientras la respuesta no sea A o B o C o D (Validador de respuestas)
-			Por favor contestar con A,B,C y D solamente	
-		si la respuesta_1r = A
-			puntaje_r= puntaje_r + 1
-		si no puntaje_r = puntaje_r
 
-		Pregunta 2 : ¿Qué canción pertenece a la banda “Aerosmith”? A- All in black  B- Satisfaction C- Dream On  D- Let it be 
-		respuesta_2r= lo que ingrese el usuario 
-		 Mientras la respuesta no sea A o B o C o D (Validador de respuestas)
-			Por favor contestar con A,B,C y D solamente	
-		si la respuesta_2r = B
-			puntaje_r= puntaje_r + 1
-		si no puntaje_r = puntaje_r
 
-		Pregunta 3 : Completa la letra Is this the real life? Is this just ______ ?  A- a dream  B- my imagination C- me  D- fantasy
-		respuesta_3r = lo que ingrese el usuario 
-		 Mientras la respuesta no sea A o B o C o D (Validador de respuestas)
-			Por favor contestar con A,B,C y D solamente	
-		si la respuesta_3r = D
-			puntaje_r= puntaje_ + 1
-		si no puntaje_r = puntaje_r
 
-		Pregunta 4 : ¿Cuál banda canta “Creep” ? A- Radiohead  B- AC/DC C- The White Stripes  D- Nirvana
-		respuesta_4r= lo que ingrese el usuario 
-		 Mientras la respuesta no sea A o B o C o D (Validador de respuestas)
-			Por favor contestar con A,B,C y D solamente	
-		si la respuesta_4r = A
-			puntaje_r = puntaje_r + 1
-		si no puntaje_r = puntaje_r
-
-		Pregunta 5 : ¿Quién ganó el premio Grammy al mejor album de rock en 2013? A- Foo fighters B- U2 C- Led Zeppelin D- Green Day
-		respuesta_5r= lo que ingrese el usuario 
-		 Mientras la respuesta no sea A o B o C o D (Validador de respuestas)
-			Por favor contestar con A,B,C y D solamente	
-		si la respuesta_5r = D
-			puntaje_r = puntaje_r + 1
-		si no puntaje_r = puntaje_r
-
-	       calificacion_r = puntaje_r/5 * 100
-		Mostrar calificacion
-			si calificacion_r = 20 mostrar 1 estrella 
-			si calificacion_r = 40 mostrar 2 estrellas
-			si calificacion_r = 60 mostrar 3 estrellas
-			si calificacion_r = 80 mostrar 4 estrellas
-			si calificacion_r = 100 mostrar 5 estrellas
-	
-	Todas las estrellas que se muestren serán imagenes
 

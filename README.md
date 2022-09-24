@@ -1,6 +1,6 @@
 # Proyecto-TC1028
 
-## Convert
+## Convertidor de unidades
 
 Una unidad de medida es un valor designado que se "usa para medir la magnitud física de un objeto, sustancia o fenómeno" (Unidades de medida, 2019). Las unidades de medida tienen una gran importancia en nuestra vida ya que  permiten calcular cosas como la longitud, la masa, la capacidad, la superficie, el volumen, la temperatura, ó el tiempo. La temperatura es una medida relativa, las escalas que se basan en puntos de referencia deben ser usadas para medir la temperatura con precisión. Elegí las 3 unidades de temperatura más conocidas ya que las escalas de temperatura "nos permiten medir la energia del calor de una manera ligeramente diferente"(Martha, 2003). 
 

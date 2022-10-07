@@ -63,7 +63,7 @@ def m_a_yd(m):
     respuestas_lista_med.append(yd)
     return yd	
 
-def mi_km(mi):
+def mi_a_km(mi):
     km=mi*1.609
     respuestas_lista_med.append(km)
     return km
@@ -155,7 +155,7 @@ def mostrar_opciones_a():
         print("la respuesta es: ",mi_a_km(mi),"kilómetros")
 
     elif respuesta_2 == 8:
-        km=float(input("Ingresa los km"))
+        km=float(input("Ingresa los km: "))
         print("la respuesta es: ",km_a_mi(km),"millas")
 
 #Función que se ejecuta si el usuario elige la opción b (conversión de temperaturas)   
@@ -197,36 +197,69 @@ def mostrar_opciones_b():
         f=float(input("Ingresa los grados Fahrenheit: "))
         print("la respuesta es: ",fa_a_ke(f),"grados Kelvin")
 
+def crear_diccionario():
+    diccionario={"nombre":nombre,"edad":edad,"conversiones realizadas":cantidad_c,"conversiones de medida":respuestas_lista_med,"conversiones de temperatura":respuestas_lista_temp}
+    lista_con_diccionarios.append(diccionario)
+
+def mostrar_diccionario(lista_con_diccionarios):
+    print(lista_con_diccionarios)
+    for i in lista_con_diccionarios:
+        for llave in i:
+            print(llave + ": " + str(i[llave]) +"\n")
+
+
 #Bienvenida al programa y una breve explicación de lo que podrás realizar
-print("Hola bienvenido a este programa.")
-print("Aquí podrás convertir tus unidades de una manera fácil y rápida.")
-nombre=input ("Para continuar ingresa tu nombre completo: ")
-#Se manda a llamar la función que comprueba al nombre
-comprobar_nombre(nombre)
+ban=1
+diccionario={}
+lista_con_diccionarios=[]
+while ban==1:
+    print("Hola bienvenido a este programa.")
+    print("Aquí podrás convertir tus unidades de una manera fácil y rápida.")
+    nombre=input ("Para continuar ingresa tu nombre completo: ")
+    #Se manda a llamar la función que comprueba al nombre
+    comprobar_nombre(nombre)
 
-edad=int(input("¿Cuántos años tienes?\n"))
-#Se manda a llamar la función que comprueba la edad
-comprobar_edad(edad)
+    edad=int(input("¿Cuántos años tienes?\n"))
+    #Se manda a llamar la función que comprueba la edad
+    comprobar_edad(edad)
 
-cantidad_c=int(input("¿Cuántas converciones vas a realizar?\n"))
-#Creación de listas para guardar los resultados de las converciónes de medidas y temperatura 
-respuestas_lista_temp=[]
-#Uso de for para que repita el programa dependiendo cuantas conversiones quiso hacer el usuario
-for i in range (0,cantidad_c):
+    cantidad_c=int(input("¿Cuántas converciones vas a realizar?\n"))
+    #Creación de listas para guardar los resultados de las converciónes de medidas y temperatura 
+    respuestas_lista_temp=[]
+    respuestas_lista_med=[]
+    #Uso de for para que repita el programa dependiendo cuantas conversiones quiso hacer el usuario
+    for i in range (0,cantidad_c):
 
-    print("Elige una opción para continuar (contestar solo con letras)")
-    print("¿Qué quieres convertir?")
-    print("A-Medidas de longitud")
-    print("B-Temperatura ")
+        print("Elige una opción para continuar (contestar solo con letras)")
+        print("¿Qué quieres convertir?")
+        print("A-Medidas de longitud")
+        print("B-Temperatura ")
 
-    r1=input()
-    respuesta_1=comprobar_respuesta_1(r1)
-    if respuesta_1  == "a":
-        mostrar_opciones_a()
-    elif respuesta_1  == "b":
-        mostrar_opciones_b()
+        r1=input()
+        respuesta_1=comprobar_respuesta_1(r1)
+        if respuesta_1  == "a":
+            mostrar_opciones_a()
+        elif respuesta_1  == "b":
+            mostrar_opciones_b()
 
-#Se imprimen las listas con los resultados del usuario
-print("Tus converciones de temperatura fueron:",respuestas_lista_temp)
-print("Tus converciones de medida fueron:",respuestas_lista_med)
+    #Se imprimen las listas con los resultados del usuario
+    print("Tus converciones de temperatura fueron:",respuestas_lista_temp)
+    print("Tus converciones de medida fueron:",respuestas_lista_med)
+    crear_diccionario()
 
+    print("¿Quiéres continuar con el programa? 1.Si 2.No")
+    r4=int(input())
+    if r4==1:
+        ban=1
+    elif r4==2:
+        print("¿Quiéres conocer el historial de conversiones? 1.Si 2.No")
+        r5=int(input())
+        if r5==1:
+            print(mostrar_diccionario(lista_con_diccionarios))
+        ban=0
+
+
+
+
+
+        

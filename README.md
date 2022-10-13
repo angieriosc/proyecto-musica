@@ -39,75 +39,75 @@ Importar las expresiones regulares con la biblioteca RegEx. Este lenguaje se enc
 	
  ce_a fa():
  
-	f=((9*c)/5)+32
-	return f
+   f=((9*c)/5)+32
+   return f
 	
  ke_a_fa():
  
-	f=(((9*(k-273.15))/9)+32
-	return f
+   f=(((9*(k-273.15))/9)+32
+   return f
 	
  fa_a_ke():
  
-	k=(((5*(f-32))/9)+273.15
-	return k
+   k=(((5*(f-32))/9)+273.15
+   return k
 
 #Funciones medidas
 
  cm_a_in(cm):
  
-	in=cm/2.54
-	return in
+   in=cm/2.54
+   return in
 	
  in_a_cm(in):
  
-	cm=in*2.54
-	return cm
+   cm=in*2.54
+   return cm
 	
  ft_a_m(ft):
  
-	m=ft*0.3048
-	return m
+   m=ft*0.3048
+   return m
 	
  m_a_ft(m):
  
-	ft=m/0.3048
-	return ft
+   ft=m/0.3048
+   return ft
 	
  yd_a_m(yd):
  
-	m=yd*0.914
-	return m
+   m=yd*0.914
+   return m
 	
  m_a_yd(m):
  
-	yd=m/0.914
-	return m
+   yd=m/0.914
+   return m
 	
  mi_km(mi):
  
-	km=mi*1.609
-	return km
+   km=mi*1.609
+   return km
 	
  km_a_mi():
  
-	mi=km/1.609
-	return mi
+   mi=km/1.609
+   return mi
 
  funcion comprobar_nombre(nombre):
-	
-	patron_nombre = nombre + espacio + apellido1 + espacio + apellido2
-	mientras re.search(patron_nombre,nombre) no coincidan:
-		imprimir "Nombre inválido favor de escribir tu nombre completo"
-		nombre =input ("\nPara continuar ingresa tu nombre completo:\n"
-	return nombre
+
+   patron_nombre = nombre + espacio + apellido1 + espacio + apellido2
+   mientras re.search(patron_nombre,nombre) no coincidan:
+	imprimir "Nombre inválido favor de escribir tu nombre completo"
+	nombre =input ("\nPara continuar ingresa tu nombre completo:\n"
+   return nombre
 
  funcion comprobar_edad(edad):
    
    mientras edad>110 or edad<=0:
       imprimir "Respuesta inválida favor de responder de nuevo"
       edad=int(input("¿Cuántos años tienes?\n"))
-      return edad
+   return edad
 
 
  funcion verificar_correo(mail):
@@ -245,9 +245,9 @@ Importar las expresiones regulares con la biblioteca RegEx. Este lenguaje se enc
 
 
 
-ban=1
-lista_con_diccionarios=[]
-mientras ban==1:
+	ban=1
+	lista_con_diccionarios=[]
+	mientras ban==1:
     imprimir "Hola bienvenido a este programa.")
     imprimir "Aquí podrás convertir tus unidades de una manera fácil y rápida.")
    

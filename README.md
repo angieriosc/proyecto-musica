@@ -31,8 +31,8 @@ Importar las expresiones regulares con la biblioteca RegEx. Este lenguaje se enc
 	return c
 	
  fa_a_ce():
-	c=(5*(f-32))/9
-	return c
+    c=(5*(f-32))/9
+    return c
 	
  ce_a fa():
 	f=((9*c)/5)+32
@@ -161,7 +161,7 @@ Importar las expresiones regulares con la biblioteca RegEx. Este lenguaje se enc
         mi=float(input("Ingresa los millas: "))
         imprimir("la respuesta es: ",mi_a_km(mi),"kilómetros")
 
-   si la respuesta_2 es igual8:
+    si la respuesta_2 es igual8:
         km=float(input("Ingresa los km: "))
         imprimirt("la respuesta es: ",km_a_mi(km),"millas")
 
@@ -226,7 +226,7 @@ mientras ban==1:
     imprimir "Hola bienvenido a este programa.")
     imprimir "Aquí podrás convertir tus unidades de una manera fácil y rápida.")
    
-   nombre=input ("Para continuar ingresa tu nombre completo:\n")
+    nombre=input ("Para continuar ingresa tu nombre completo:\n")
     llamar funcion comprobar_nombre(nombre)
     
     edad=input("¿Cuántos años tienes?\n")

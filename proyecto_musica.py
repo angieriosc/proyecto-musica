@@ -1,5 +1,5 @@
-from tkinter import*
-from tkinter import ttk
+#importamos la biblioteca RegEx para el uso de una verificación de datos por medio de patrones previamente establecidos
+import re 
 
 #Funciones temperatura (se realizan operaciones para obtener el resultado de la conversión y luego se añaden a la lista de temperaturas)
 def ce_a_ke(c):
@@ -73,35 +73,53 @@ def km_a_mi(km):
     respuestas_lista_med.append(mi)
     return mi
 
-#Ciclo while que verifica que sea un nombre real 
-def comprobar_nombre(nombre):
-    caracteres_nombre=len(nombre)
-    while caracteres_nombre<2:
-      print("\nNombre inválido favor de escribir un nombre que contenga como mínimo 2 caracteres")
-      nombre=input ("Para continuar ingresa tu nombre completo: ")
-      caracteres_nombre=len(nombre)
+#Función que contiene un ciclo while que verifica que sea un nombre real
+#Primero se establece el patrón (Acepta valores de a-z en minúsculas y mayúsculas
+#El código \u00C0-\u017F es un valor que permite que el usuario ingrese su nombre con acentos
+#Si la busqueda del patron en el nombre no coincide se entra en el ciclo
+#Al final uso return para regresar el nombre verificado
+def comprobar_nombre(name):
+    patron_nombre='^[a-zA-Z\u00C0-\u017F]+[ ]+[a-zA-Z\u00C0-\u017F]+[ ]+[a-zA-Z\u00C0-\u017F]'
+    while re.search(patron_nombre,name)==None:
+        print("Nombre inválido favor de escribir tu nombre completo(con los dos apellidos)")
+        name=input ("\nPara continuar ingresa tu nombre completo:\n")
+    return name
 
-#Ciclo while que verifica que sea una edad real   
+#Función que contiene un ciclo while que verifica que sea una edad posible
+
 def comprobar_edad(edad):
-    while edad>110 or edad<=0:
-      print("\Respuesta inválida favor de responder de nuevo")
+    while edad>=110 or edad<=0:
+      print("Respuesta inválida favor de responder de nuevo")
       edad=int(input("¿Cuántos años tienes?\n"))
+    return edad
 
-#Ciclo while que verifica que la respuesta sea a o b, se utiliza .lower para que no afecte si el usuario ingresa la respuesta en mayúsculas   
+
+#Función que contiene un ciclo while y mediante la funcion de re.search que verifica que el correo ingresado por el usuario
+#cuente con el formato que suelen tener la mayoría de los correos
+#el signo ? indica que puede aparecer o no
+def verificar_correo(mail):
+    patron='^[a-zA-Z 0-9 ._]+[@]\w+[a-zA-Z]+[.]\w{2,3}$'
+    while re.search(patron,mail)== None:
+        print ("correo invalido favor de ingresar de nuevo su correo")
+        mail=input("\nIngresa tu correo electrónico:\n")
+    return mail
+
+#Función que contiene un ciclo while que verifica que la respuesta sea a o b
+#Se utiliza .lower para que no afecte si el usuario ingresa la respuesta en mayúsculas   
 def comprobar_respuesta_1(respuesta_1):
     while respuesta_1.lower()!= "a" and respuesta_1.lower()!= "b": 
         print("Respuesta no válida favor de contestar solo con A ó B\n")
         respuesta_1=input()
     return respuesta_1
 
-#Ciclo while que verifica que la respuesta entre dentro del rango de opciones posibles 
+#Función que contiene un ciclo while que verifica que la respuesta 2 entre dentro del rango de opciones posibles 
 def comprobar_respuesta_2(respuesta_2):
     while respuesta_2>8 or respuesta_2<=0:
         print("Respuesta no válida favor de contestar solo con 1,2,3,4,5,6,7 ó 8")
         respuesta_2=int(input())
     return respuesta_2
 
-#Ciclo while que verifica que la respuesta entre dentro del rango de opciones posibles 
+#Función que contiene un ciclo while que verifica que la respuesta 3 entre dentro del rango de opciones posibles 
 def comprobar_respuesta_3(respuesta_3):
     while respuesta_3>6 or respuesta_3<=0:
         print("Respuesta no válida favor de contestar solo con 1,2,3,4,5 ó 6 /n")
@@ -196,32 +214,47 @@ def mostrar_opciones_b():
     elif respuesta_3 == 6:
         f=float(input("Ingresa los grados Fahrenheit: "))
         print("la respuesta es: ",fa_a_ke(f),"grados Kelvin")
+        
+#Función que comprueba las respuestas r4 y r5 
+#Se utiliza un ciclo while para que el usuario conteste con 1 o 2 
+def comprobar_r4_r5(r):
+    while r!="1" and r!="2":
+        print("Respuesta invalida favor de contestar con 1 o 2")
+        r=input()
+    return r
 
+#Función que crea un diccionario con los datos de el usuario que utilizo el programa
+#Se utiliza la función .append () para agregar el diccionario creado a una lista 
 def crear_diccionario():
-    diccionario={"nombre":nombre,"edad":edad,"conversiones realizadas":cantidad_c,"conversiones de medida":respuestas_lista_med,"conversiones de temperatura":respuestas_lista_temp}
+    diccionario={"nombre":nombre,"edad":edad,"email":correo,"conversiones realizadas":cantidad_c,"conversiones de medida":respuestas_lista_med,"conversiones de temperatura":respuestas_lista_temp}
     lista_con_diccionarios.append(diccionario)
-
+    
+#Función que despliega la información guardada en la lista de diccionarios
+#Uso de for para imprimir cada llave y su valor que se encuentran en el diccionario guardado en la lista de diccionarios 
 def mostrar_diccionario(lista_con_diccionarios):
-    print(lista_con_diccionarios)
     for i in lista_con_diccionarios:
         for llave in i:
             print(llave + ": " + str(i[llave]) +"\n")
 
 
-#Bienvenida al programa y una breve explicación de lo que podrás realizar
+#Creación de variable que hace que el ciclo while comience
 ban=1
-diccionario={}
+#Creación de lista vacia que se llenara con la información que del usuario
 lista_con_diccionarios=[]
+#Ciclo while que permite que el programa continue corriendo hasta que el usuario quiera detenerlo
 while ban==1:
+#Bienvenida al programa y una breve explicación de lo que podrás realizar
     print("Hola bienvenido a este programa.")
     print("Aquí podrás convertir tus unidades de una manera fácil y rápida.")
-    nombre=input ("Para continuar ingresa tu nombre completo: ")
+    nombre=input ("Para continuar ingresa tu nombre completo:\n")
     #Se manda a llamar la función que comprueba al nombre
     comprobar_nombre(nombre)
-
     edad=int(input("¿Cuántos años tienes?\n"))
     #Se manda a llamar la función que comprueba la edad
     comprobar_edad(edad)
+    #Se manda a llamar la función que verifica que el correo sea válido
+    correo=input("Ingresa tu correo electrónico:\n")
+    verificar_correo(correo)
 
     cantidad_c=int(input("¿Cuántas converciones vas a realizar?\n"))
     #Creación de listas para guardar los resultados de las converciónes de medidas y temperatura 
@@ -237,26 +270,32 @@ while ban==1:
 
         r1=input()
         respuesta_1=comprobar_respuesta_1(r1)
-        if respuesta_1  == "a":
+        if respuesta_1.lower()== "a":
             mostrar_opciones_a()
-        elif respuesta_1  == "b":
+        elif respuesta_1.lower()== "b":
             mostrar_opciones_b()
 
     #Se imprimen las listas con los resultados del usuario
     print("Tus converciones de temperatura fueron:",respuestas_lista_temp)
     print("Tus converciones de medida fueron:",respuestas_lista_med)
-    crear_diccionario()
+    dic=crear_diccionario()
 
     print("¿Quiéres continuar con el programa? 1.Si 2.No")
-    r4=int(input())
-    if r4==1:
+    r4=input()
+    r4=comprobar_r4_r5(r4)
+    if r4=="1":
         ban=1
-    elif r4==2:
+    elif r4=="2":
         print("¿Quiéres conocer el historial de conversiones? 1.Si 2.No")
-        r5=int(input())
-        if r5==1:
-            print(mostrar_diccionario(lista_con_diccionarios))
-        ban=0
+        r5=input()
+        r5=comprobar_r4_r5(r5)
+        if r5=="1":
+            mostrar_diccionario(lista_con_diccionarios)
+            print("El programa ha terminado")
+            ban=0
+        elif r5=="2":
+            print("El programa ha terminado")
+            ban=0
 
 
 

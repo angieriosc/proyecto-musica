@@ -23,92 +23,78 @@ Importar las expresiones regulares con la biblioteca RegEx. Este lenguaje se enc
 #Funciones temperatura
 
   ce_a_ke(c):
-
 	k=c+273.15
 	return k
 	
-ke_a_ce(k):
-
-	c=k-273.15
+ ke_a_ce(k):
+ 	c=k-273.15
 	return c
 	
-fa_a_ce():
-
+ fa_a_ce():
 	c=(5*(f-32))/9
 	return c
 	
-ce_a fa():
-
+ ce_a fa():
 	f=((9*c)/5)+32
 	return f
 	
-ke_a_fa():
-
+ ke_a_fa():
 	f=(((9*(k-273.15))/9)+32
 	return f
 	
-fa_a_ke():
-
+ fa_a_ke():
 	k=(((5*(f-32))/9)+273.15
 	return k
 
 #Funciones medidas
 
-cm_a_in(cm):
-
+ cm_a_in(cm):
 	in=cm/2.54
 	return in
 	
-in_a_cm(in):
-
+ in_a_cm(in):
 	cm=in*2.54
 	return cm
 	
-ft_a_m(ft):
-
+ ft_a_m(ft):
 	m=ft*0.3048
 	return m
 	
-m_a_ft(m):
-
+ m_a_ft(m):
 	ft=m/0.3048
 	return ft
 	
-yd_a_m(yd):
-
+ yd_a_m(yd):
 	m=yd*0.914
 	return m
 	
-m_a_yd(m):
-
+ m_a_yd(m):
 	yd=m/0.914
 	return m
 	
-mi_km(mi):
-
+ mi_km(mi):
 	km=mi*1.609
 	return km
 	
-km_a_mi():
-
+ km_a_mi():
 	mi=km/1.609
 	return mi
 
-funcion comprobar_nombre(nombre):
+ funcion comprobar_nombre(nombre):
 	patron_nombre = nombre + espacio + apellido1 + espacio + apellido2
 	mientras re.search(patron_nombre,nombre) no coincidan:
 		imprimir "Nombre inválido favor de escribir tu nombre completo"
 		nombre =input ("\nPara continuar ingresa tu nombre completo:\n"
 	return nombre
 
-funcion comprobar_edad(edad):
+ funcion comprobar_edad(edad):
     mientras edad>110 or edad<=0:
       imprimir "Respuesta inválida favor de responder de nuevo"
       edad=int(input("¿Cuántos años tienes?\n"))
       return edad
 
 
-funcion verificar_correo(mail):
+ funcion verificar_correo(mail):
     patron=letras,numeros y signos + @ + letras + . + 2 a 3 caracteres
     mientras re.search(patron,mail)no coinciden:
         imprimir "correo invalido favor de ingresar de nuevo su correo")¡
@@ -116,25 +102,25 @@ funcion verificar_correo(mail):
     return mail
 
 
-función comprobar_respuesta_1(respuesta_1):
+ función comprobar_respuesta_1(respuesta_1):
     mientras respuesta_1 en minusculas sea diferente a "a" y respuesta_1 en minusculas sea diferente a "b": 
         imprimir("Respuesta no válida favor de contestar solo con A ó B\n")
         respuesta_1=input()
     return respuesta_1
 
-función comprobar_respuesta_2(respuesta_2):
+ función comprobar_respuesta_2(respuesta_2):
     mientras respuesta_2 sea mayor que 8 y menor o igual a 0:
         imprimir("Respuesta no válida favor de contestar solo con 1,2,3,4,5,6,7 ó 8")
         respuesta_2=int(input())
     return respuesta_2
  
-función comprobar_respuesta_3(respuesta_3):
+ función comprobar_respuesta_3(respuesta_3):
     mientras respuesta_3 sea mayor a 6 o menor o igual a 0:
         imprimir("Respuesta no válida favor de contestar solo con 1,2,3,4,5 ó 6 /n")
         respuesta_3=int(input())
     return respuesta_3
     
-función mostrar_opciones_a():    
+ función mostrar_opciones_a():    
     imprimir"Elige que deseas convertir:"
     imprimir"1- centímetros a pulgadas"
     imprimir"2- pulgadas a centímetros" 
@@ -180,7 +166,7 @@ función mostrar_opciones_a():
         imprimirt("la respuesta es: ",km_a_mi(km),"millas")
 
 
-funcion mostrar_opciones_b():
+ funcion mostrar_opciones_b():
     imprimir "Elige que deseas convertir:"
     imprimir "1- Celcius a Kelvin"
     imprimir "2- Kelvin a Celcius" 
@@ -211,23 +197,23 @@ funcion mostrar_opciones_b():
         k=float(input("Ingresa los grados Kelvin: "))
         imprimir "la respuesta es: ",ke_a_fa(k),"grados Fahrenheit"
 
-   si la respuesta_3 es igual a 6:
+    si la respuesta_3 es igual a 6:
         f=float(input("Ingresa los grados Fahrenheit: "))
         imprimir "la respuesta es: ",fa_a_ke(f),"grados Kelvin"
         
 
-funcion comprobar_r4_r5(r):
+ funcion comprobar_r4_r5(r):
     mientras r sea diferente a "1" o r sea diferente a "2":
         imprimir "Respuesta invalida favor de contestar con 1 o 2"
         r=input()
     return r
 
 
-funcion crear_diccionario():
+ funcion crear_diccionario():
     diccionario={"nombre":nombre,"edad":edad,"email":correo,"conversiones realizadas":cantidad_c,"conversiones de medida":respuestas_lista_med,"conversiones de temperatura":respuestas_lista_temp}
     lista_con_diccionarios agregar (diccionario)
 
-funcion mostrar_diccionario(lista_con_diccionarios):
+ funcion mostrar_diccionario(lista_con_diccionarios):
     para el elemento en lista_con_diccionarios:
         para la llave en elemento:
             imprimir llave + ": " + str(elemento[llave]) +"\n"

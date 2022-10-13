@@ -11,7 +11,9 @@ Decidi crear este programa ya que creo que las unidades de medida forman parte d
 Referencias: 
 
 Unidades de medida. (2019, 8 agosto). Significados. Recuperado 22 de septiembre de 2022, de https://www.significados.com/unidades-de-medida/
+
 Day,M & Carphi,A (2003)	Temperatura. Recuperado 22 de septiembre de 2022, de https://www.visionlearning.com/es/library/Ciencias-Generales/3/Temperatura/48
+
 Kuchling, A (2022). Expresiones Regulares. Recuperado 11 de octubre de 2022 de https://docs.python.org/es/3/howto/regex.html 
 
 ## Pseudocódigo

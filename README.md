@@ -96,18 +96,18 @@ Importar las expresiones regulares con la biblioteca RegEx. Este lenguaje se enc
  
  funcion comprobar_nombre(nombre):
 
-   patron_nombre = nombre + espacio + apellido1 + espacio + apellido2
-   mientras re.search(patron_nombre,nombre) no coincidan:
+    patron_nombre = nombre + espacio + apellido1 + espacio + apellido2
+    mientras re.search(patron_nombre,nombre) no coincidan:
 	imprimir "Nombre inválido favor de escribir tu nombre completo"
 	nombre =input ("\nPara continuar ingresa tu nombre completo:\n"
-   return nombre
+    return nombre
 
  funcion comprobar_edad(edad):
    
-   mientras edad>110 or edad<=0:
+    mientras edad>110 or edad<=0:
       imprimir "Respuesta inválida favor de responder de nuevo"
       edad=int(input("¿Cuántos años tienes?\n"))
-   return edad
+    return edad
 
 
  funcion verificar_correo(mail):

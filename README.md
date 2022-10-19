@@ -18,7 +18,7 @@ Kuchling, A (2022). Expresiones Regulares. Recuperado 11 de octubre de 2022 de h
 
 ## Pseudocódigo
 
-Importar las expresiones regulares con la biblioteca RegEx. Este lenguaje se encuentra dentro de python en el módulo Re que permite comparar cadenas con patrones predeterminados 
+##Importar las expresiones regulares con la biblioteca RegEx. Este lenguaje se encuentra dentro de python en el módulo Re que permite comparar cadenas con patrones predeterminados 
 
 #Funciones temperatura
 

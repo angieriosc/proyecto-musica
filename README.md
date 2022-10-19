@@ -243,7 +243,7 @@ Kuchling, A (2022). Expresiones Regulares. Recuperado 11 de octubre de 2022 de h
         para la llave en elemento:
             imprimir llave + ": " + str(elemento[llave]) +"\n"
 
-
+ Inicio del programa:
 
 	ban=1
 	lista_con_diccionarios=[]

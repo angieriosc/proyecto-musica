@@ -12,7 +12,8 @@ def ce_a_ke(c):
     """
     (uso de operadores, uso de funciones)
     recibe: 1 valor que corresponde a los grados celcius
-    suma 273.15 a el valor
+    suma 273.15 a el valor y agrega el valor generado a la lista\
+    de temperaturas.
     devuelve:el resultado de la operación cuya unidad son grados kelvin
     """
     k=c+273.15
@@ -23,7 +24,8 @@ def ke_a_ce(k):
     """
     (uso de operadores, uso de funciones)
     recibe: 1 valor que corresponde a los grados kelvin
-    resta 273.15 a el valor recibido
+    resta 273.15 a el valor recibido y agrega el valor generado a \
+    la lista de temperaturas.
     devuelve:el resultado de la operación que representa los grados celsius
     """
     c=k-273.15
@@ -35,7 +37,8 @@ def fa_a_ce(f):
     (uso de operadores, uso de funciones)
     recibe: 1 valor que corresponde a los grados fahrenheit  
     se resta 32 al valor recibido se multiplica por 5 y lo \
-    obtenido se divide entre 9
+    obtenido se divide entre 9 y agrega el valor generado a \
+    la lista de temperaturas.
     devuelve:el resultado de la operación cuya unidad son grados 
     """
     c=(5*(f-32))/9
@@ -47,7 +50,8 @@ def ce_a_fa(c):
     (uso de operadores, uso de funciones)
     recibe: 1 valor que corresponde a los grados celcius
     multiplica el valor recibido por 9 divide el resultado \
-    entre 5 y al final se le suman 32
+    entre 5 y al final se le suman 32 y agrega el valor generado a \
+    la lista de temperaturas.
     devuelve:el resultado de la operación cuya unidad son grados fahrenheit
     """
     f=((9*c)/5)+32
@@ -59,7 +63,8 @@ def ke_a_fa(k):
     (uso de operadores, uso de funciones)
     recibe: 1 valor que corresponde a los grados kelvin
     resta 273.15 al valor recibido, multiplica el resultado por 9/5 \
-    y se le suman 32
+    y se le suman 32 y agrega el valor generado a la lista \
+     de temperaturas.
     devuelve:el resultado de la operación cuya unidad son grados fahrenheit
     """    
     f=(k-273.15)*(9/5)+32
@@ -71,7 +76,8 @@ def fa_a_ke(f):
     (uso de operadores, uso de funciones)
     recibe: 1 valor que corresponde a los grados fahrenheit
     resta 32 al valor recibido se multiplica el resultado por 5/9 \
-    y se le suman 273.15
+    y se le suman 273.15 y agrega el valor generado a \
+    la lista de temperaturas.
     devuelve:el resultado de la operación cuya unidad son grados kelvin
     """
     k=((f-32)*(5/9))+273.15
@@ -86,7 +92,8 @@ def cm_a_in(cm):
     """
     (uso de operadores, uso de funciones)
     recibe: 1 valor que corresponde a los centrimetros 
-    divir el valor recibido entre 2.54
+    divir el valor recibido entre 2.54 y agrega el valor generado a \
+    la lista de medidas.
     devuelve:el resultado de la operación cuya unidad son pulgadas
     """
     inch=cm/2.54
@@ -97,7 +104,8 @@ def in_a_cm(inch):
     """
     (uso de operadores, uso de funciones)
     recibe: 1 valor que corresponde a las pulgadas  
-    se multiplica el valor recibido por 2.54
+    se multiplica el valor recibido por 2.54vy agrega el valor generado a\
+    la lista de medidas.
     devuelve:el resultado de la operación cuya unidad son centimetros 
     """
     cm=inch*2.54
@@ -108,7 +116,8 @@ def ft_a_m(ft):
     """
     (uso de operadores, uso de funciones)
     recibe: 1 valor que corresponde a los pies  
-    multiplica el valor recibido por 0.3048
+    multiplica el valor recibido por 0.3048 y agrega el valor generado a\
+    la lista de medidas.
     devuelve:el resultado de la operación cuya unidad son metros
     """
     m=ft*0.3048
@@ -119,7 +128,8 @@ def m_a_ft(m):
     """
     (uso de operadores, uso de funciones)
     recibe: 1 valor que corresponde a los metros  
-    divide el valor recibido entre 0.3048
+    divide el valor recibido entre 0.3048 y agrega el valor generado a \
+    la lista de medidas.
     devuelve:el resultado de la operación cuya unidad son pies
     """
     ft=m/0.3048
@@ -130,7 +140,8 @@ def yd_a_m(yd):
     """
     (uso de operadores, uso de funciones)
     recibe: 1 valor que corresponde a las yardas
-    multiplica el valor recibido por 0.914
+    multiplica el valor recibido por 0.914 y agrega el valor generado a \
+    la lista de medidas.
     devuelve:el resultado de la operación cuya unidad son 
     """ 
     m=yd*0.914
@@ -141,7 +152,8 @@ def m_a_yd(m):
     """
     (uso de operadores, uso de funciones)
     recibe: 1 valor que corresponde a los metros  
-    divide el valor recibido entre 0.914
+    divide el valor recibido entre 0.914 y agrega el valor generado a \
+    la lista de  medidas.
     devuelve:el resultado de la operación cuya unidad son yardas
     """
     yd=m/0.914
@@ -152,7 +164,8 @@ def mi_a_km(mi):
     """
     (uso de operadores, uso de funciones)
     recibe: 1 valor que corresponde a las millas
-    multiplica el valor recibido por 1.609
+    multiplica el valor recibido por 1.609 y agrega el valor generado a \
+    la lista de  medidas.
     devuelve:el resultado de la operación cuya unidad son kilometros
     """    
     km=mi*1.609
@@ -163,7 +176,8 @@ def km_a_mi(km):
     """
     (uso de operadores, uso de funciones)
     recibe: 1 valor que corresponde a los kilometros
-    divide el valor recibido entre 1.609
+    divide el valor recibido entre 1.609 y agrega el valor generado a \
+    la lista de  medidas.
     devuelve:el resultado de la operación cuya unidad son millas
     """    
     mi=km/1.609
